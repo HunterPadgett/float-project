@@ -1,0 +1,43 @@
+body {
+ margin: 0;
+ height: 100vh;
+ overflow: hidden;
+ background-color: #121212;
+}
+
+span {
+ background-image: url("./img/5845e635fb0b0755fa99d7e9.png");
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ background-size: cover;
+ transform: translate(-50%, -50%);
+ animation: animate 10s infinite;
+ pointer-events: none;
+}
+
+@keyframes animate {
+ 0% {
+  transform: translate(-50%, -50%);
+  /* opacity: 1; */
+  filter: hue-rotate(0);
+ }
+ 100% {
+  transform: translate(-50%, -5000%);
+  /* opacity: 1; */
+  filter: hue-rotate(900deg);
+ }
+}
+
+/* .doge {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -1;
+}
+
+.doge img {
+  height: 100px;
+} */
