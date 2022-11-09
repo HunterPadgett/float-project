@@ -20,7 +20,7 @@ bodyFloat.addEventListener('mousemove', (event) => {
 })
 
 const volume = () => {
-  partyMusic.volume = 0;
+  partyMusic.volume = 0.1;
   partyMusic.autoplay;
   partyMusic.loop;
 }
