@@ -34,7 +34,7 @@ span {
 .party {
  display: flex;
  align-items: flex-end;
- margin-bottom: 10rem;
+ justify-content: center;
  height: 100vh;
  overflow: hidden;
 }
@@ -43,15 +43,8 @@ audio::-webkit-media-controls-panel {
   background: linear-gradient(90deg, #d616a6 0%,  #20bbc0 100%);
 }
 
-/* .doge {
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  z-index: -1;
+element:hover, element:active {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none /*only to disable context menu on long press*/
 }
-
-.doge img {
-  height: 100px;
-} */
