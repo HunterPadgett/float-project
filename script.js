@@ -16,10 +16,14 @@ bodyFloat.addEventListener('mousemove', (event) => {
   }, 10000)
 })
 
-partyMusic.volume = 0.1
-partyMusic.autoplay
-partyMusic.loop
+const volume = () => {
+  partyMusic.volume = 0.1;
+  partyMusic.autoplay;
+  partyMusic.loop;
+}
 
 function randomNumber() {
   return Math.floor(Math.random() * 100)
 }
+
+volume();
