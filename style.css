@@ -19,10 +19,14 @@ span {
 }
 
 @keyframes animate {
+ 0% {
+  transform: translate(-0%, -50%);
+  /* opacity: 1; */
+  filter: hue-rotate(0);
+ }
  100% {
   transform: translate(-0%, -4500%);
-  /* transform: ; */
-  opacity: 1;
+  /* opacity: 1; */
   filter: hue-rotate(600deg);
  }
 }
@@ -35,7 +39,8 @@ span {
  overflow: hidden;
 }
 
-audio {
+audio::-webkit-media-controls-panel {
+  background: linear-gradient(90deg, #d616a6 0%,  #20bbc0 100%);
 }
 
 /* .doge {

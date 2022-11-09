@@ -13,10 +13,12 @@ bodyFloat.addEventListener('mousemove', (event) => {
   bodyFloat.appendChild(spanElement);
   setTimeout(() => {
     spanElement.remove()
-  }, 100000)
+  }, 10000)
 })
 
 partyMusic.volume = 0.1
+partyMusic.autoplay
+partyMusic.loop
 
 function randomNumber() {
   return Math.floor(Math.random() * 100)
