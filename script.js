@@ -1,6 +1,7 @@
 const bodyFloat = document.querySelector("body");
 const partyMusic = document.querySelector("audio");
 
+
 document.addEventListener("touchstart", function () {}, true);
 
 bodyFloat.addEventListener("mousemove", (event) => {
@@ -15,13 +16,12 @@ bodyFloat.addEventListener("mousemove", (event) => {
  bodyFloat.appendChild(spanElement);
  setTimeout(() => {
   spanElement.remove();
- }, 10000);
- 
+ }, 9000);
 });
 
 const volume = () => {
+//  partyMusic.autoplay;
  partyMusic.volume = 0.1;
- partyMusic.autoplay;
  partyMusic.loop;
 };
 
